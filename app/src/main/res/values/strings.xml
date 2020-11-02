@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Pressure</string>
+    <string name="first_title">Комплексная система мониторинга здоровья</string>
+    <string name="insert_fio">Введите Ваше ФИО</string>
+    <string name="insert_age">Введите Ваш возраст</string>
+    <string name="save_button">Сохранить</string>
+    <string name="pressure_button">Показатели давления</string>
+    <string name="life_indexes">Жизненные показатели здоровья</string>
+    <string name="second_title">Индивидуальные показатели давления</string>
+    <string name="higher_pressure">Введите верхнее давление</string>
+    <string name="lower_pressure">Введите нижнее давление</string>
+    <string name="pulse">Введите пульс</string>
+    <string name="tahikardia">Есть ли у Вас тахикардия?</string>
+    <string name="weight">Введите Ваш вес</string>
+    <string name="steps">Введите количество шагов</string>
+    <string name="developer">by Mayakova</string>
+    <string name="icon">icon</string>
+    <string name="insert_number">Введите число</string>
+</resources>

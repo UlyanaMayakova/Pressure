@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/lifeButton"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/life_indexes"
+        app:layout_constraintBottom_toBottomOf="@+id/pressureButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pressureButton"
+        app:layout_constraintTop_toTopOf="@+id/pressureButton" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="300dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="56dp"
+        android:autofillHints="age"
+        android:ems="10"
+        android:hint="@string/insert_age"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fio" />
+
+    <TextView
+        android:id="@+id/firstTitle"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="11dp"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/first_title"
+        android:textColor="#1C1B1B"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/developer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/developer"
+        android:layout_width="148dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="136dp"
+        android:text="@string/developer"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTitle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="104dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="68dp"
+        android:contentDescription="@string/icon"
+        app:layout_constraintEnd_toStartOf="@+id/firstTitle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:id="@+id/fio"
+        android:layout_width="300dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="404dp"
+        android:autofillHints="fio"
+        android:ems="10"
+        android:hint="@string/insert_fio"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/saveButton1"
+        android:layout_width="124dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="57dp"
+        android:text="@string/save_button"
+        app:layout_constraintBottom_toTopOf="@+id/pressureButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <Button
+        android:id="@+id/pressureButton"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="71dp"
+        android:text="@string/pressure_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lifeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
